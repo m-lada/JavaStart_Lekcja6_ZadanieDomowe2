@@ -2,7 +2,7 @@ package pl.logic;
 
 import java.util.Scanner;
 
-public class Logic {
+public class PointTools {
 
     public String coordinateSystem(Point point) {
         String quadrant;
@@ -20,12 +20,10 @@ public class Logic {
 
     public Point newPointFromUser() {
         Scanner scanner = new Scanner(System.in);
-        int x;
-        int y;
         System.out.println("Podaj x:");
-        x = scanner.nextInt();
+        int x = scanner.nextInt();
         System.out.println("Podaj y:");
-        y = scanner.nextInt();
+        int y = scanner.nextInt();
         return new Point(x, y);
     }
 }

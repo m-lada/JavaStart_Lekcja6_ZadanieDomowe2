@@ -1,16 +1,14 @@
 package pl.model;
 
-import pl.logic.Logic;
+import pl.logic.PointTools;
 import pl.logic.Point;
-
-import java.util.Scanner;
 
 public class Test {
     public static void main(String[] args) {
-        Logic logic = new Logic();
+        PointTools pointTools = new PointTools();
 
-        Point point = logic.newPointFromUser();
+        Point point = pointTools.newPointFromUser();
         System.out.print("Punkt o wsp. x = " + point.getX() + " oarz y = " + point.getY());
-        System.out.println(" znajduje się w " + logic.coordinateSystem(point)  + " ćwiartce");
+        System.out.println(" znajduje się w " + pointTools.coordinateSystem(point)  + " ćwiartce");
     }
 }
